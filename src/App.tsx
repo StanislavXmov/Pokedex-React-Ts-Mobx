@@ -3,6 +3,7 @@ import Typography from '@mui/material/Typography';
 
 import styles from "./App.module.css";
 import { Container } from '@mui/material';
+import { ListWrapper } from './components/ListWrapper';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Typography variant='h3' align='center' >
         Pokedex
       </Typography>
+      <ListWrapper />
     </Container>
   );
 }
