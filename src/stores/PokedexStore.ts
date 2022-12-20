@@ -16,10 +16,6 @@ const PokedexStore = () => makeAutoObservable({
         this.loading = false;
         this.namedList = data;
       });
-      // getPokemonList(offset, limit)
-      //   .then(data => {
-      //     this.namedList = data;
-      //   })
     }
 });
 

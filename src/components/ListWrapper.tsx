@@ -16,8 +16,8 @@ export const ListWrapper = observer(() => {
   return (
     <Box sx={{width: '100%'}} >
       {app.loading && <h2>Loading ...</h2>}
-      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-          {app.namedList.results && app.namedList.results.map(resourse => <ListItem key={resourse.name} name={resourse.name} />)}
+      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', margin: '0px auto'}}>
+          {app.namedList.results && app.namedList.results.map(resourse => <ListItem key={resourse.name} resource={resourse} />)}
       </List>
     </Box>
   )
