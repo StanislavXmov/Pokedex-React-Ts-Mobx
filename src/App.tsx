@@ -1,12 +1,16 @@
 import React from 'react';
+import Typography from '@mui/material/Typography';
 
 import styles from "./App.module.css";
+import { Container } from '@mui/material';
 
 const App = () => {
   return (
-    <div className="App">
-      Hello App
-    </div>
+    <Container maxWidth='md'>
+      <Typography variant='h3' align='center' >
+        Pokedex
+      </Typography>
+    </Container>
   );
 }
 
